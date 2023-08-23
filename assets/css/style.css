@@ -405,6 +405,9 @@ a {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
 }
+.member-item:hover .member-item__thumb {
+    transform: scale(1.1);
+}
 .member-item__img-bg {
     background-color: #eaf6ff;
     padding-top: 28px;
@@ -416,6 +419,7 @@ a {
     max-width: 100%;
     object-fit: cover;
     height: 290px;
+    transition: 0.25s;
 }
 .member-item__name {
     color: #10375c;
@@ -457,4 +461,47 @@ a {
 }
 .member__control-icon-next {
     rotate: 180deg;
+}
+/* install */
+.install {
+    margin-top: 170px;
+}
+.install__inner {
+    border-radius: 4px;
+    background: #2e80ce;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.install__img {
+    display: block;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+}
+.install__content {
+    max-width: 586px;
+}
+.install__heading,
+.instal__desc {
+    color: #fff;
+}
+.install__heading {
+    max-width: 520px;
+}
+.instal__desc {
+    max-width: 586px;
+    color: #fff;
+    font-family: Sora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 166.667% */
+}
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 28px;
 }
